@@ -9,11 +9,10 @@ from flet import (Page,
     Animation,
     alignment,
     Stack,
-    padding,
     ClipBehavior,
     TextButton,
     Column,
-    Offset
+    AppView
 
 )
 import constants
@@ -466,5 +465,5 @@ def main(page: Page):
     )
 
 if __name__ == "__main__":
-    app(main)
+    app(target=main, view=AppView.WEB_BROWSER)
 
